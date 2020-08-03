@@ -1,0 +1,275 @@
+/*body{
+  overflow-x:hidden;
+}*/
+.mynav {
+  min-height: 70px !important;
+  z-index: 1;
+}
+.mynav .logo {
+  font-size: 25px;
+}
+.shadow {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) !important;
+}
+.myfont {
+  font-family: "Abril Fatface", cursive;
+}
+.orangeicon {
+  color: orange;
+}
+.orange {
+  background: orange;
+  color: black !important;
+}
+@font-face {
+  font-family: Abril Fatface;
+  src: url(../font/AbrilFatface-Regular.otf);
+}
+.head {
+  z-index: 0;
+  position: relative;
+  top: -100px;
+  left: 0px;
+  background-image: url("../images/bg_1.jpg");
+  height: 113vh;
+  background-size: cover;
+}
+.head .mytext {
+  width: 500px;
+  height: 450px;
+  padding-top: 300px !important;
+}
+.head .mytext .mytext1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 1;
+}
+.head .mytext .mytext2 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+.head2 {
+  z-index: 0;
+  position: relative;
+  top: -100px;
+  left: 0;
+  background-image: url("../images/bg_1.jpg");
+  height: 113vh;
+  background-size: cover;
+}
+.head2 .mytext {
+  padding-top: 500px !important;
+}
+.head2 .mytext .mytext1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 1;
+}
+.search {
+  background: orange;
+  position: relative;
+  top: 31%;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.search .tours {
+  transform: translateY(-50px);
+}
+.search .tours .internal, .search .tours .external {
+  height: 40px;
+  color: white;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.search .tours .internal:hover, .search .tours .external:hover {
+  background: orange;
+  color: black;
+}
+.ext, .int {
+  margin-bottom: 100px;
+}
+.ext .image, .int .image {
+  height: 250px !important;
+}
+.borderr {
+  border-bottom: 2px solid #6c757d;
+}
+.features ul {
+  padding-left: 0px;
+}
+.features ul li {
+  list-style: none;
+}
+.features ul li a {
+  text-decoration: none;
+  color: #6c757d;
+}
+.features ul li a:hover {
+  color: white;
+}
+.form1 {
+  height: 40px;
+  border: none;
+}
+.input2 {
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btn3 {
+  height: 100%;
+  border: none;
+  outline: none;
+  margin-left: -2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #08c29a;
+}
+.borderr {
+  border-bottom: 2px solid #6c757d;
+}
+.footer {
+  background: #222831;
+}
+.social {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  background: #606060;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.btn2 {
+  width: 200px !important;
+  background: #1268b2 !important;
+}
+.icon {
+  transform: translate(30px, 20px);
+  z-index: 1;
+  color: lightgray;
+}
+.btn-green {
+  background: #08c29a;
+  color: white;
+}
+.btn-green:hover {
+  background: white;
+  color: #08c29a;
+  border: 2px solid #08c29a;
+  box-sizing: border-box;
+}
+
+.ui-controlgroup.ui-controlgroup-vertical > button.ui-button,
+.ui-controlgroup.ui-controlgroup-vertical > .ui-controlgroup-label {
+  text-align: center;
+}
+#car-type-button {
+  width: 120px;
+}
+.ui-controlgroup-horizontal .ui-spinner-input {
+  width: 20px;
+}
+.ui-datepicker-calendar, .ui-datepicker-header {
+  background: white;
+  padding: 20px;
+}
+.cards a{
+  text-decoration: none;
+  color:black;
+}
+.money{
+  color:#73AFFD;
+}
+
+@media screen and (max-width: 1300px) {
+  .tours .internal h5, .tours .external h5 {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tours {
+    position: relative;
+    top: -40px;
+  }
+  .head .mytext {
+    margin-left: 10px;
+  }
+  .head .mytext .mytext1 {
+    font-size: 50px;
+  }
+  .head .mytext .mytext2 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 774px) {
+  .ext {
+    margin-top: 220px;
+  }
+  .icon {
+    transform: translate(20px, 35px);
+  }
+  .btn2 {
+    margin-top: 20px;
+  }
+  .inputs {
+    position: relative;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 991px){
+  .mynav{
+    background: black;
+  }
+}
+@media screen and (max-width: 558px){
+    .head .mytext{
+      width: 250px;
+    }
+}
+@media screen and (max-width: 767px) {
+  
+  .head2 .mytext {
+    margin-left: 10px;
+  }
+  .head2 .mytext .mytext1 {
+    font-size: 50px;
+  }
+ 
+}
+
+@media screen and (max-width: 1200px){
+    .mainmap{
+      text-align: center;
+    }
+} 
+@media screen and (max-width: 634px){
+    .map{
+      height: 400px !important;
+      width: 400px !important
+
+    }
+} 
+@media screen and (max-width: 453px){
+    .map{
+      height: 300px !important;
+      width: 300px !important
+
+    }
+} 
+@media screen and (max-width: 348px){
+    .map{
+      height: 250px !important;
+      width: 250px !important;
+
+    }
+} 
+/*# sourceMappingURL=main.css.map */

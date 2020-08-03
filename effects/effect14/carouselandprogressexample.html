@@ -1,0 +1,269 @@
+progressbar -->
+<h3>progressbar</h3>
+<div id="pbCircle" class="progressbar-circle"></div>
+<style type="text/css">
+	.progressbar-circle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.progressbar-circle .progressbar-text {
+  font-size: 34px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: center;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+</style>
+<script type="text/javascript" src="js/progressbar.js"></script>
+<script type="text/javascript">
+	var bar = new ProgressBar.Circle(pbCircle, {
+  color: '#000',
+  strokeWidth: 1,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: true
+  },
+  from: { color: '#eda44c', width: 1 },
+  to: { color: '#eda44c', width: 1 }, 
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+  }
+});
+	bar.animate(1);
+ // Number from 0.0 to 1.0
+// stroke-dashoffset: 310.985;
+// 	let variable = 1;
+ $("#carouselExampleCaptions").on('slide.bs.carousel', function () {
+ 	$('#carouselExampleCaptions').find('.progressbar-circle').find('path').animate({'stroke-dashoffset': 311.061}, 0)
+ 		bar.animate(variable);
+	});
+
+
+ $('.carousel').carousel({
+  interval: 2000
+})
+</script>
+
+
+
+<h3>OWL CAROUSEL</h3>
+<!-- owl carousel -->
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+ <div class="carousel-ozclassin owl-carousel owl-theme" id="carousel1">
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+       <div class="item"><img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"></div>
+  </div>
+
+
+
+<style type="text/css">.item{
+    box-shadow: 0px 5px 16px 0px #d0cdcd;
+    overflow: hidden;
+    height: 400px;
+      /*border-radius: 20px;*/
+      background: red;
+}
+.item img{
+		object-fit: cover;
+ 	object-position: bottom;
+ 	height: 100%
+}
+.owl-item{
+        /*padding: 13px 10px 26px 12px;*/
+        overflow: hidden;
+}
+.owl-dots{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel button.owl-dot:active ,.owl-carousel button.owl-dot:focus{
+    outline: none !important;
+    border:none !important;
+}
+.owl-carousel button.owl-dot {
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    color: #b7b7b7;
+    background: #b7b7b7;
+    margin-right: 10px;
+    box-shadow: 0 0 black;
+     height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.owl-carousel button.owl-dot.active{
+    background: #311848;
+}
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$('.carousel-ozclassin').owlCarousel({
+    loop:true,
+    animateOut: 'bounceInRight',
+    animateIn: 'bounceOutLeft',
+    autoplay: true,
+    margin:10,
+    padding:10,
+    dots:true,
+    items:1,	
+    nav:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        }
+    }
+       
+});
+
+
+  // mousewheel edende firlansin
+    $('.carousel-ozclassin').on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+          $('.carousel-ozclassin').trigger('next.owl');
+    } else {
+          $('.carousel-ozclassin').trigger('prev.owl');
+    }
+    e.preventDefault();
+  });
+    
+
+  // sag sol duymelerine basanda firlansin
+  $(document).keydown(function(e) {
+  if (e.which==39) {
+      $('.carousel-ozclassin').trigger('next.owl');
+  }
+   else if(e.which==37) {
+      $('.carousel-ozclassin').trigger('prev.owl');
+  }
+  });
+</script>
+
+
+
+<!-- fancybox -->
+<h3>FANCYBOX</h3>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+<a href="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg"data-fancybox="gallery" class="p-0 col-md-5 video">
+	<img src="https://media.sketchfab.com/models/57251df830d54930a441e9cd4b6ac83b/thumbnails/3ac9b668552f4c8d8e6603df92bbb890/640x360.jpeg" alt="" class="video-wrap">				<div class="mainplay">
+					
+			
+		</div>
+</a>		
+<script src="js/jquery.fancybox.min.js"></script>
+
+
+<!-- 
+
+ navSpeed oduki oxlara klikleyendeki suret
+ autoplaySpeed oduki ozu geden vaxt olan suret
+  autoplayTimeout ise nece saniyeden bir getmelidi -->
+
+<!-- $('.all-products-wrapper .all-products').owlCarousel({
+        loop: true,
+        lazyLoad:true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 120,
+        dots: false,
+        nav: true,
+        navSpeed: 120,
+        navText: ["<i class='fas fa-angle-left'></i>","<i class='fas fa-angle-right'></i>"],
+        items: 5, 
+        margin: -2,
+        slideBy: 5,
+        responsive : {
+            0: {
+               items: 1,
+               slideBy: 1,
+               autoplaySpeed: 200,
+               navSpeed: 200
+            },
+            576: {
+               items: 2,
+               slideBy: 2,
+               autoplaySpeed: 200,
+               navSpeed: 200
+            },
+            768 : {
+                items: 3,
+                slideBy: 3,
+                autoplaySpeed: 120,
+                navSpeed: 120
+            },
+            991 : {
+                items: 4,
+                slideBy: 4,
+                autoplaySpeed: 120,
+                navSpeed: 120
+            },
+            1200 : {
+                items: 5,
+                slideBy: 5,
+                autoplaySpeed: 120,
+                navSpeed: 120
+            }
+        }
+    });
+    
+    autoplayi durdurub davam etmekcun
+    // when hover items
+    
+    $('.all-products-wrapper .all-products .item-wrap').mouseover(function(){
+     $(this).trigger('stop.owl.autoplay');
+    });
+    
+    $('.all-products-wrapper .all-products .item-wrap').mouseleave(function(){
+      $(this).trigger('play.owl.autoplay',[5000]);
+    });
+    
+    //when click navs
+    
+    $('.all-products-wrapper .all-products .owl-nav > button').on('click', function () {
+        $('.all-products-wrapper .all-products').trigger('stop.owl.autoplay');
+    });
+    
+    $('.all-products-wrapper .all-products .owl-nav > button').mouseover(function(){
+      $('.all-products-wrapper .all-products').trigger('play.owl.autoplay',[5000]);
+    });
+    
+    $('.all-products-wrapper .all-products .owl-nav > button').mouseleave(function(){
+      $('.all-products-wrapper .all-products').trigger('play.owl.autoplay',[5000]);
+    });
+});

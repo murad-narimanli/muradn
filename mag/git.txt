@@ -1,0 +1,63 @@
+git config --global user.name 'murad-narimanli'  
+git config --global user.email 'murad.narimanli@mail.ru' 
+ls +++ butun dosyalari gosterir
+ls -a (show hidden files) ++
+pwd ++  tam adresi verir fayl sistemini
+cd ++
+clear  // ctrl +l(clear everything) ++
+git init   git fayli ucundur
+git add . fayli stage e atir *** yenı gıt deposu gecit deposu
+git add index.html   sirf hansisa fayli elave etmek ucundurgiy
+git commit -m "your message"    commit ucundur repoya yazir
+git log (show me all git versions) versiyalar ucundur versiyalari gosterir
+git status (show changes) ++  deyishklikler ucundur
+git diff(show all file's changes) +++
+git diff filename.extention(show one file's changes) 1 fayldaki deyishkliyi gosterir
+git diff --staged(depo and staged difference)++ stage ile depo arasindaki ferqi gosterir
+git rm filename.ext (delete and add file staging)++ silinmenin stage de bildirir el ile silsek stage e dushmur
+git rm -r foldername/ (delete and add folder) ++
+git mv oldname.ext newname.ext ++
+git mv filename.ext foldername/++++
+
+git checkout -- "filename(rechange or take deleted file)"
+
+git reset HEAD filename "(change staged to working) (rm ile silinen faylin adi)"
+git checkout -- "filename reset ile gelen fayl stage de olr onu qaytaririrq"
+
+git checkout hashcode -- . butun fayllarin o versiyadaki halini getirir
+
+git checkout hashcode -- index.html (sirf bu faylin versiyasin getirir)
+
+git remote add example http://githubrepo/yourfile.git++
+git remote (check working or not)++
+git push -u example master++
+
+git .gitignore 
+cat >> .gitignore  ---- sonra faylin adini isteyir  (daha etrafli barish arslan git github)
+
+touch index.html html ---- fayli yaradir
+
+
+butun branch siyahisi
+git branch --all
+
+branch yaratmaq
+git branch branchname (create)
+
+branch siyahisi
+git branch
+
+brancha kecme 
+git checkout branchname (go next branch)
+
+branch ile master arasindaki ferqi gosterir
+git diff master yourbracnhname 
+
+
+bracnhlari birleshdirmek---
+git merge yourbranchname
+
+
+git diff master otherbranch(show the difference)
+git merge othernch( mix)
+git push -u example master

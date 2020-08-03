@@ -1,0 +1,93 @@
+body {
+  background: #611;
+  padding: 70px 0;
+  font: 15px/20px Arial, sans-serif;
+}
+ 
+.container {
+  margin: 100px auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+ 
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+ 
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 2em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+ 
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+  /*background: #ed1c24;*/
+  background-image: url(https://moneyinc.com/wp-content/uploads/2019/08/2020-cars.jpg);
+  background-size: cover;
+  }
+.b {
+  transform: rotateY(60deg) translateZ(250px);
+  /*background: #0072bc;*/
+  background-image: url(https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  }
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+  /*background: #39b54a;*/
+  background-image: url(https://static2.businessinsider.com/image/5d9b5bff52887931e8497a36-1405/141222twnmustang.jpg);
+  background-size: cover;
+  }
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  /*background: #f26522;*/
+  background-image: url(https://indianewengland.com/wp-content/uploads/2020/01/Car-red.jpg);
+  background-size: cover;
+  }
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  /*background: #630460;*/
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYxPn-Qbd-GniD4ExKVQIZn1De2G91wi0TTa0EV9llyngBGVVJ);
+  background-size: cover;
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+  /*background: #8c6239;*/
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTgEKNq7PkdyPFGr_Fz35cVW1CzXrBkdf0cM4leWMzjSMwBAZxw);
+  background-size: cover;
+}
+ 
+.next, .prev {
+  color: lightgray;
+  position:absolute;
+  /*top: 250px;*/
+  width: 50px;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #000;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;
+}
+.next:hover, .prev:hover { color: #fff; }
+.next:active, .prev:active {
+  /*top: 254px;*/
+  box-shadow: 0 1px 0 #fff;
+}
+.next { right:25em; }
+.prev { left:25em; }

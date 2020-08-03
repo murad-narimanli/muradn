@@ -1,0 +1,27 @@
+body{
+	background-image: url(https://img.freepik.com/free-vector/abstract-splashed-watercolor-textured-background_53876-8717.jpg?size=626&ext=jpg);
+	background-size: cover;
+	background-attachment: fixed;: 
+}
+
+.earth{
+	height: 300px;
+	width: 300px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYBFW996lC3R6_7oLyu4uer7rZ3dmlFbxisg&usqp=CAU);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;	
+	border-radius: 50%;
+	background-size: cover;
+	box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+	animation:spin 10s linear alternate infinite;
+}
+
+
+@keyframes spin{
+	100%{background-position: 100%;
+	}
+}
